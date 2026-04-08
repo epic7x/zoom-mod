@@ -1,0 +1,72 @@
+{
+	"geode": "5.5.3",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "epic7x.zoom",
+	"name": "Zoom",
+	"version": "v1.0.0",
+	"developer": "epic7x",
+	"description": "Allows you to zoom while paused!",
+	"links": {
+		"source": "https://github.com/epic7x/zoom-mod"
+	},
+	"dependencies": {},
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		]
+	},
+	"tags": [
+		"enhancement",
+		"interface",
+		"offline",
+		"utility"
+	],
+	"settings": {
+	"zoom-sensitivity": {
+		"name": "Zoom Rate",
+		"description": "Determines how sensitive the zoom is. Higher values increase zoom speed.",
+		"type": "float",
+		"default": 1,
+		"min": 0.1,
+		"max": 10,
+		"control": {
+			"slider": true
+		},
+		"platforms": ["win", "mac"]
+	},
+	"auto-hide-menu": {
+		"name": "Hide Menu Automatically",
+		"description": "Hides the menu by itself when zooming in.",
+		"type": "bool",
+		"default": true,
+		"platforms": ["win", "mac"]
+	},
+	"auto-show-menu": {
+		"name": "Show Menu Automatically",
+		"description": "Displays the menu again when zooming out.",
+		"type": "bool",
+		"default": true,
+		"platforms": ["win", "mac"]
+	},
+	"alt-disables-zoom": {
+		"name": "Alt Key Stops Zoom",
+		"description": "Prevents zooming while the Alt key is pressed.",
+		"type": "bool",
+		"default": true,
+		"platforms": ["win", "mac"]
+	},
+	"toggle-menu-keybind": {
+		"name": "Toggle Pause Screen",
+		"description": "Allows showing or hiding the pause screen while zoomed in.",
+		"type": "keybind",
+		"default": "Home",
+		"category": "gameplay",
+		"platforms": ["win", "mac"]
+	}
+}
+}
